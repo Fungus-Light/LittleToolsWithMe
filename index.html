@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/materialize.css">
+		<link rel="stylesheet" href="css/iconfont/material-icons.css">
+
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {});
+		</script>
+	</head>
+	<body>
+		<nav class="nav-extended blue-grey darken-4">
+			<div class="nav-wrapper">
+				<a href="#!" class=" center brand-logo">随身工具集</a>
+			</div>
+		</nav>
+
+		<ul id="slide-out" class="sidenav">
+			<li><a href="#!" class="waves-effect func-switcher" call-id="00"><i class="material-icons">home</i>index</a></li>
+			<li>
+				<div class="divider"></div>
+			</li>
+			<li><a class="subheader">沙雕类</a></li>
+			<li><a href="#!" class="waves-effect func-switcher" call-id="a1"><i class="material-icons">polymer</i>Dice It!</a></li>
+			<li><a href="#!" class="waves-effect func-switcher" call-id="a2"><i class="material-icons">android</i>UselessAndroid</a></li>
+			<li><a href="#!" class="waves-effect func-switcher" call-id="a3"><i class="material-icons">replay</i>EndlessLoading</a></li>
+			<li>
+				<div class="divider"></div>
+			</li>
+
+			<li><a class="subheader">实用类</a></li>
+
+			<li><a href="#!"  class="disabled"><i class="material-icons">more_horiz</i>敬请期待</a></li>
+
+
+			<!-- <li>
+				<div class="divider"></div>
+			</li>
+		
+			<li><a class="subheader">关于</a></li>
+			<li><a id="view-code" href="#!" class="waves-effect"><i class="material-icons">code</i>查看源代码</a></li> -->
+		</ul>
+
+		<main>
+
+			<div class="func-mod" mod-id="00">
+				<div class="row">
+					<div class="col s12 m6">
+						<div class="card blue-grey lighten-4">
+							<div class="card-content black-text">
+								<span class="card-title">首页（v-0.0.1a）</span>
+								<p>
+									这是个小程序的合集，使用JavaScript和我最爱的MaterializeCSS写成，
+									你可以当成是一个什么都有的玩意儿来使用。
+								</p>
+								<br>
+								<p>
+									部分功能会写在同一个页面上，有些复杂的会写在额外页面里
+								</p>
+								<br>
+								<p>
+									现在点击右下角黄色按钮开始使用吧
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!--Dice It!!-->
+			<div id="dice-it" class="func-mod" mod-id="a1">
+				<div class="row">
+					<div class="col s12 m6">
+						<div class="card blue-grey lighten-4">
+							<div class="card-content black-text">
+								<span class="card-title">Dice It !</span>
+								<p>遇事不决先roll点，每日测人品</p>
+								<div class="row">
+									<form class="col s12">
+										<div class="row">
+											<div class="input-field col s8  black-text">
+												<textarea id="roll-content" class="materialize-textarea"></textarea>
+												<label for="roll-content">roll点内容</label>
+											</div>
+											<div class="col s4">
+												<br>
+												<a id="roll-it" class="waves-effect waves-light-blue blue btn btn-small">ROLL IT</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="input-field col s8">
+												<select id="dice-it-mod">
+													<option value="0" disabled selected>选择模块</option>
+													<option value="1">今日人品</option>
+												</select>
+												<label>模块选择</label>
+											</div>
+											<div class="col s4">
+												<br>
+												<a id="dice-it-btn" class="waves-effect waves-light-blue blue btn btn-small">Dice It</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="col s12 m6">
+						<div class="card blue-grey lighten-4">
+							<div class="card-content black-text">
+								<span class="card-title">结果</span>
+								<p id="dice-it-result">
+									Dice it now !!!!
+								</p>
+							</div>
+						</div>
+					</div> -->
+				</div>
+
+			</div>
+
+			<div id="useless-android" class="func-mod" mod-id="a2">
+				<div class="row">
+					<div class="col s12 m6">
+						<div class="card blue-grey lighten-4">
+							<div class="card-content black-text">
+								<span class="card-title">无用机器人</span>
+								<p>
+									这是一个没什么卵用的机器人:-),你可以点着玩
+								</p>
+								<br>
+								<img class="responsive-img" src="img/Yukuri.jpg">
+								<div class="col s9">
+									<p id="useless-and-content">开始点吧</p>
+								</div>
+								<div class="col s3">
+									<a id="useless-and-click" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">adb</i></a>
+								</div>
+								<br>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="func-mod" mod-id="a3">
+				<div class="row">
+					<div class="col s12 m6">
+						<div class="card blue-grey lighten-4">
+							<div class="card-content black-text">
+								<span class="card-title">永无止境的进度条</span>
+								<p>
+									一个永远也加载不完的进度条
+								</p>
+								<br>
+								<div id="endless-load-pg1" class="progress">
+									<div id="endless-load-bar" class="determinate" style="width: 0%"></div>
+								</div>
+								<div id="endless-load-pg2" class="progress">
+									<div class="indeterminate"></div>
+								</div>
+								<p id="endless-load-content">加载进度0%</p>
+								<div id="endless-load-rotate" class="preloader-wrapper small active">
+									<div class="spinner-layer spinner-green-only">
+										<div class="circle-clipper left">
+											<div class="circle"></div>
+										</div>
+										<div class="gap-patch">
+											<div class="circle"></div>
+										</div>
+										<div class="circle-clipper right">
+											<div class="circle"></div>
+										</div>
+									</div>
+								</div>
+								<br>
+								<div class="col s4"></div>
+								<div class="col s6">
+									<a id="endless-load-reload" class="waves-effect waves-light btn-small"><i class="material-icons right">replay</i>重试</a>
+								</div>
+								<div class="col s2"></div>
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</main>
+
+
+		<div class="fixed-action-btn">
+			<a data-target="slide-out" class="btn-floating waves-effect waves-light btn-large yellow sidenav-trigger">
+				<i class="large material-icons">menu</i>
+			</a>
+		</div>
+		<script src="js/jquery/jquery.min.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/Functions/FunctionsControl.js"></script>
+		<!--Useless But Fun-->
+		<script src="js/Functions/UselessButFun/DiceIt.js"></script>
+		<script src="js/Functions/UselessButFun/UselessAnd.js"></script>
+		<script src="js/Functions/UselessButFun/EndlessLoader.js"></script>
+
+	</body>
+</html>
