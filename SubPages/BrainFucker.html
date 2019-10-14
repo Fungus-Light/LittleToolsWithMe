@@ -19,13 +19,13 @@
 		</nav>
 
 		<ul id="slide-out" class="sidenav">
-			<li><a id="back-index" href="#!" class="waves-effect"><i class="material-icons">home</i>返回主界面</a></li>
+			<li><a id="back-index" href="#!" class="waves-effect"><i class="material-icons">chevron_left</i>返回主界面</a></li>
 			<li>
 				<div class="divider"></div>
 			</li>
 			<li><a class="subheader">功能菜单</a></li>
-			<li><a href="#!" class="waves-effect"><i class="material-icons">add</i>新游戏</a></li>
-			<li><a href="#!" class="waves-effect "><i class="material-icons">play_arrow</i>继续上次</a></li>
+			<li><a id="new-game" href="#!" class="waves-effect"><i class="material-icons">add</i>新游戏</a></li>
+<!-- 			<li><a href="#!" class="waves-effect "><i class="material-icons">play_arrow</i>继续上次</a></li> -->
 			<li><a href="#!" class="waves-effect "><i class="material-icons">trending_up</i>排行榜</a></li>
 		</ul>
 
@@ -40,6 +40,10 @@
 						</p>
 						<br>
 						<p>
+							- 每局共30道题
+						</p>
+						<br>
+						<p>
 							- 选择你的难度并点击开始游戏
 						</p>
 						<br>
@@ -48,7 +52,7 @@
 						</p><br>
 						<div class="row">
 							<div class="input-field col s12">
-								<select>
+								<select id="level-select">
 									<option value="0" disabled selected>选择一个难度</option>
 									<option value="1">⑨</option>
 									<option value="2">⑨⑨</option>
@@ -58,7 +62,7 @@
 								<label>难度选择</label>
 							</div>
 							<div class="col s4"></div>
-							<a class="waves-effect waves-light btn blue"><i class="material-icons left">child_care</i>F*ck Me</a>
+							<a id="start-game" class="waves-effect waves-light btn blue"><i class="material-icons left">child_care</i>F*ck Me</a>
 
 						</div>
 
@@ -71,19 +75,19 @@
 			<div id="game-bar" class="col s12 m6">
 				<div class="card blue-grey lighten-4">
 					<div class="card-content black-text">
-						<span class="card-title">游戏难度：⑨</span>
+						<span id="game-level" class="card-title">游戏难度：⑨</span>
 						<p>
-							点击下面按钮开始挑战，请仔细阅读答题要求
+							点击下面按钮提交答案，请仔细阅读答题要求
 						</p>
 						<br>
-						<p>
+						<p id="question-tip">
 							- 20以内四则运算
 						</p>
-						<h4 style="color: #A21318;">答题区写本题答案</h4>
+						<h4 id="answer-tip" style="color: #A21318;">答题区写本题答案</h4>
 
 						<div>
-							<h5>本题还剩：15s</h5>
-							<h5>请计算：15+16=？</h5>
+							<h5 id="time-left">本题还剩：15s</h5>
+							<h5 id="question">请计算：15+16=？</h5>
 						</div>
 						<br>
 						<div class="row">
@@ -91,18 +95,18 @@
 								<div class="row">
 									<div class="input-field col s10">
 										<i class="material-icons prefix">border_color</i>
-										<input id="answer" type="tel" class="validate">
+										<input id="answer" type="tel" class="validate" disabled>
 										<label for="answer">答案</label>
 									</div>
 								</div>
 							</form>
-							<span class="col s3"></span>
-							<a class="waves-effect waves-light btn blue"><i class="material-icons left">child_care</i>Go F*ck Me</a>
+							<span class="col s4"></span>
+							<a id="answer-sub" class="waves-effect waves-light btn blue"><i class="material-icons left">child_care</i>提交答案</a>
 													
 						</div>
 						
 						<br>
-						<h5>正确：1；错误：5</h5>
+						<h5 id="game-result">正确：1；错误：5；未答：3</h5>
 					</div>
 					
 				</div>
