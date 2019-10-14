@@ -14,7 +14,7 @@
 	<body>
 		<nav class="nav-extended blue-grey darken-4">
 			<div class="nav-wrapper">
-				<a href="#!" class=" center brand-logo">随身工具集</a>
+				<a href="#!" class=" center brand-logo">某个工具集</a>
 			</div>
 		</nav>
 
@@ -32,9 +32,14 @@
 			</li>
 
 			<li><a class="subheader">实用类</a></li>
-			<li><a href="#!" class="waves-effect func-switcher" call-id="b1"><i class="material-icons">child_care</i>Brain F*cker</a></li>
+			<li><a id="func-brain-fucker" href="#!" class="waves-effect"><i class="material-icons">child_care</i>Brain
+					F*cker</a></li>
 			<li><a href="#!" class="disabled"><i class="material-icons">more_horiz</i>敬请期待</a></li>
 
+			<li>
+				<div class="divider"></div>
+			</li>
+			<li><a href="#!" class="waves-effect func-switcher" call-id="info"><i class="material-icons">announcement</i>更新记录</a></li>
 
 			<!-- <li>
 				<div class="divider"></div>
@@ -51,7 +56,7 @@
 					<div class="col s12 m6">
 						<div class="card blue-grey lighten-4">
 							<div class="card-content black-text">
-								<span class="card-title">首页（v-0.0.1a）</span>
+								<span class="card-title">首页（v-0.0.2a）</span>
 								<p>
 									这是个小程序的合集，使用JavaScript和我最爱的MaterializeCSS写成，
 									你可以当成是一个什么都有的玩意儿来使用。
@@ -69,6 +74,37 @@
 					</div>
 				</div>
 
+			</div>
+			
+			<div class="func-mod" mod-id="info">
+				<div class="row">
+					<div class="col s12 m6">
+						<div class="card blue-grey lighten-4">
+							<div class="card-content black-text">
+								<span class="card-title">更新记录（v-0.0.2a）</span>
+								<p>
+									新增模块 Brain F*cker，一个锻炼脑力的游戏，目前功能还比较简单
+								</p>
+								<p>
+									新增模块 更新记录，记录每次的更新情况
+								</p>
+								<br>
+								<p>
+									完善模块：
+								</p>
+								<br>
+								<p>
+									源代码和提交issue请访问：
+								</p>
+								<br>
+								<p>
+									https://github.com/Fungus-Light/LittleToolsWithMe
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			
 			</div>
 
 			<!--Dice It!!-->
@@ -201,7 +237,7 @@
 				<i class="large material-icons">menu</i>
 			</a>
 		</div>
-		
+
 		<script src="js/jquery/jquery.min.js"></script>
 		<script src="js/materialize.js"></script>
 		<script src="js/init.js"></script>

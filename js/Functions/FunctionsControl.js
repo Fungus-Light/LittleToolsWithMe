@@ -14,3 +14,7 @@ $(".func-switcher").click(function(){
 // $("#view-code").click(function(){
 // 	plus.webview.create('https://github.com/Fungus-Light');
 // });
+
+$("#func-brain-fucker").click(function(){
+	window.location.href="./SubPages/BrainFucker.html"
+});
