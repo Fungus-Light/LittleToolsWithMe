@@ -10,11 +10,6 @@ $(".func-switcher").click(function(){
 	$(".func-mod[mod-id='"+key+"']").show();
 });
 
-
-// $("#view-code").click(function(){
-// 	plus.webview.create('https://github.com/Fungus-Light');
-// });
-
 $("#func-brain-fucker").click(function(){
 	window.location.href="./SubPages/BrainFucker.html"
 });
